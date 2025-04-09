@@ -24,6 +24,7 @@ jobs:
 
       - name: Build Docker image
         run: |
+	  pwd
           docker build -t yourdockerhubusername/yourapp:latest .
 
       - name: Scan with Trivy
