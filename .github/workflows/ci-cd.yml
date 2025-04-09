@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t yourdockerhubusername/yourapp:latest .
+          docker build -t yourdockerhubusername/yourapp:latest ./
 
       - name: Scan with Trivy
         uses: aquasecurity/trivy-action@master
